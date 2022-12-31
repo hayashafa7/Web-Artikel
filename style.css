@@ -1,0 +1,365 @@
+/* pengaturan body*/
+
+body {
+    background-color: rgb(194, 240, 194);
+    text-align: center;
+    font-family: Verdana, Tahoma, Helvetica;
+    font-size: 12px;
+}
+
+.judulheader {
+    background: #06d722;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+/* pengaturan layout utama */
+
+#layout {
+    background: #fff;
+    width: 980px;
+    margin: auto;
+    text-align: left;
+    padding: 2px;
+}
+
+#header {
+    width: 100%;
+    height: 130px;
+    background-color: #02a2d8;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 130px;
+}
+
+#menu {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 128, 6);
+    position: relative;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu ul li a {
+    float: left;
+    color: #d4d4d4;
+    padding: 12px 20px;
+    text-decoration: none;
+    background: rgb(4, 97, 17);
+    border-left: 1px solid #3C4042;
+    border-right: 1px solid #3C4042;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.6);
+}
+
+#menu ul li a:hover {
+    color: white;
+    background: #3C4042;
+}
+
+#isi {
+    padding: 5px;
+    margin-left: 30%;
+    width: 40%;
+    height: auto;
+    background-color: #9dc298;
+    position: relative;
+    margin-top: 5px;
+}
+
+.isiposting {
+    background-color: #afbc64;
+    width: 98%;
+    height: 150px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.gambardepan {
+    float: left;
+    height: 140px;
+    width: 150px;
+    margin-right: 5px;
+    margin-top: 3px;
+    padding: 1px;
+    border: 1px solid #dddddd;
+}
+
+
+/*pengaturan heading2 "Judul" */
+
+.isiposting h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+
+/*pengaturan anchor atau link yang ada di isiposting */
+
+.isiposting a {
+    text-decoration: none;
+}
+
+.isiposting a:hover {
+    color: yellow;
+}
+
+#sidebarkiri {
+    padding: 5px;
+    width: 27%;
+    background-color: #add3aa;
+    position: relative;
+    float: left;
+    border-style: dotted;
+    border-width: 0px;
+}
+
+.widged {
+    width: 99%;
+    background: #ffffff;
+    border-top: 0px solid #DFDFDF;
+    border-bottom: 0px solid #DFDFDF;
+    border-right: 0px solid #DFDFDF;
+    border-left: 0px solid #DFDFDF;
+    font-size: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+.judulwidged {
+    background: #06d722;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#menuside {
+    width: 98%;
+    height: 40px;
+    background-color: rgba(0, 128, 6, 0);
+    position: relative;
+}
+
+#navigasi {
+    position: relative;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+#navigasi a {
+    width: 27%;
+    display: block;
+    padding: 8px 9px;
+    background-color: #00A6BB;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigasi a:hover {
+    background-color: #00BCD4;
+    color: #fff;
+}
+
+#navigasi li {
+    position: absolute;
+    float: left;
+}
+
+#navigasi ul {
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+#navigasi li ul a {
+    width: 12em;
+    height: auto;
+    float: left;
+}
+
+#navigasi li:hover ul {
+    display: block;
+}
+
+#navigasi li:hover ul ul {
+    display: none;
+}
+
+#sidebarkanan {
+    padding: 5px;
+    width: 27%;
+    background-color: #add3aa;
+    position: relative;
+    float: right;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+#searchbox {
+    background: #f5f6fa;
+    font-family: 'Lato', sans-serif;
+}
+
+#input {
+    float: left;
+    width: 93%;
+    border: 3px solid #E91E63;
+    padding: 5px;
+    height: 20px;
+    outline: none;
+    color: #9DBFAF;
+    border-radius: 25px 25px;
+}
+
+#input:focus {
+    color: #E91E63;
+}
+
+#btn-search {
+    position: absolute;
+    right: -40px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #1ee939;
+    background: #117a11;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#container {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E91E63;
+}
+
+.widged {
+    width: 99%;
+    background: #ffffff;
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    font-size: 100%;
+    margin: 0px 0px 5px 0px;
+}
+
+.judulwidged {
+    background: #06d722;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.widged ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style-type: none;
+}
+
+.widged li {
+    padding: 0px 0px 0px 0px;
+    background-position: left;
+    background-repeat: no-repeat;
+    color: #333333;
+}
+
+.widged li a {
+    color: #333333;
+    border-bottom: 1px dotted #cccccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    padding: 4px 5px 3px 10px;
+}
+
+.widged li a:hover {
+    color: blue;
+}
+
+#footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    padding-top: 30;
+    background-color: #49494e;
+    color: white;
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    clear: both;
+}
+
+.isipostingall {
+    background-color: #bc9d64;
+    width: 98%;
+    height: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.isipostingall h2 {
+    text-align: center;
+    color: rgb(0, 128, 49);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gambarposting1 {
+    width: 230px;
+    height: 250px;
+    float: right;
+    margin: 10px 5px 5px 10px;
+}
+
+.profil {
+    width: 200px;
+    height: 250px;
+    display: block;
+    float: right;
+    padding-right: 5px;
+}
+
+.profil h2 {
+    text-align: center;
+    color: rgb(0, 128, 90);
+    font-size: 20px;
+    font-weight: bold;
+}

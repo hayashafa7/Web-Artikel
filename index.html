@@ -1,0 +1,135 @@
+<html>
+<main id="wrapper-main">
+
+    <head>
+        <title>Web Lingkungan</title>
+        <link rel="stylesheet" type="text/css" media="all" href="style.css">
+    </head>
+
+    <body>
+        <h1 class="judulheader">Web Lingkungan</h1>
+        <div id="layout">
+            <div id="header">
+                <img src="header.jpg" class="header">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="todo-form.html">TO DO LIST</a></li>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Tentang Saya</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="sidebarkiri">
+            <div class="widged">
+                <h1 class="judulwidged">Kategori</h1>
+                <div id="menuside">
+                    <ul id="navigasi">
+                        <li><a href="#">Satwa</a>
+                            <ul>
+                                <li><a href="postingan1.html">Melepasliarkan Owa Jawa ke Habitatnya</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pencemaran</a>
+                            <ul>
+                                <li> <a href="https://lingkunganhidup.co/pengertian-pencemaran-tanah-penyebab-akibat-solusi/">Pengertian
+                Pencemaran Tanah, Penyebab, Akibat dan Solusi</a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Hutan</a>
+                            <ul>
+                                <li> <a href="https://lingkunganhidup.co/manfaat-hutan-bagi-manusia-dan-lingkungan/">10 Manfaat Hutan Bagi
+                Manusia dan Lingkungan Hidupi</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="sidebarkanan">
+            <div class="widged">
+                <h1 class="judulwidged">Posting Teratas</h1>
+                <ul>
+                    <li> <a href="postingan1.html">Melepasliarkan Owa Jawa ke Habitatnya</a> </li>
+                    <li> <a href="https://lingkunganhidup.co/pengertian-pencemaran-tanah-penyebab-akibat-solusi/">Pengertian
+              Pencemaran Tanah, Penyebab, Akibat dan Solusi</a> </li>
+                    <li> <a href="https://lingkunganhidup.co/manfaat-hutan-bagi-manusia-dan-lingkungan/" target="blank">10 Manfaat
+              Hutan Bagi Manusia dan Lingkungan Hidup</a> </li>
+                </ul>
+            </div>
+            <div id="searchbox">
+                <div class="container">
+                    <div class="search">
+                        <input type="text" class="input" placeholder="What are you looking for?">
+                        <button type="submit" class="btn-search">
+              <i class="fa fa-search"></i>
+            </button>
+                    </div>
+                </div>
+            </div>
+            <h5>Mode</h5>
+            <p>
+                <span class="icon" onclick="setDarkMode(false)"><button>Light</button></span>
+                <span class="icon" onclick="setDarkMode(true)"><button>Dark</button></span>
+            </p>
+
+            <style>
+                #darkmode {
+                    background: #2E2E2E;
+                    color: white;
+                }
+            </style>
+
+            <script>
+                if (localStorage.getItem('theme') == 'dark')
+                    setDarkMode(true)
+
+                function setDarkMode(isDark) {
+                    if (isDark) {
+                        document.body.setAttribute('id', 'darkmode')
+                        localStorage.setItem('theme', 'dark')
+
+
+                    } else {
+                        document.body.setAttribute('id', '')
+                        localStorage.removeItem('theme')
+
+                    }
+
+                }
+            </script>
+        </div>
+        <div>
+            <div id="isi">
+                <div class="isiposting">
+                    <img src="posting1.jpg" class="gambardepan">
+                    <h2>Melepasliarkan Owa Jawa ke Habitatnya</h2>
+                    Lima individu owa jawa dilepasliarkan ke hutan lindung Gunung Malabar, Jawa Barat, hari ini (24/10) setelah direhabilitasi selama lima sampai tujuh tahun. Rehabilitasi dilakukan di Javan Gibbon Center d...<br>
+                    <a href="postingan1.html">
+            Baca selengkapnya &gt;&gt;&gt;&gt;&gt;
+          </a>
+                </div>
+                <div class="isiposting">
+                    <img src="posting2.jpg" class="gambardepan">
+                    <h2>Pengertian Pencemaran Tanah, Penyebab, Akibat dan Solusi</h2>
+                    Pencemaran tanah adalah tercemarinya permukaan atau bawah tanah oleh polutan dan kontaminan. Akibat polusi tanah dapat menyebabkan gangguan kesehatan pada manusia ....<br>
+                    <a href="https://lingkunganhidup.co/pengertian-pencemaran-tanah-penyebab-akibat-solusi/">
+            Baca selengkapnya &gt;&gt;&gt;&gt;&gt;
+          </a>
+                </div>
+                <div class="isiposting">
+                    <img src="posting3.jpg" class="gambardepan">
+                    <h2>10 Manfaat Hutan Bagi Manusia dan Lingkungan Hidup</h2>
+                    <br> Manfaat hutan bagi manusia diantaranya menyediakan oksigen ....<br><br>
+                    <a href="https://lingkunganhidup.co/manfaat-hutan-bagi-manusia-dan-lingkungan/" target="_blank">
+            Baca selengkapnya &gt;&gt;&gt;&gt;&gt;
+          </a>
+                </div>
+                <div id="footer">
+                    "Buanglah sampah pada tempatnya" © 2021, by Haya Shafa S.
+                </div>
+            </div>
+    </body>
+</main>
+
+</html>

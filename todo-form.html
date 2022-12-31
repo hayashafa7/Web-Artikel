@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="todo-script.js"></script>
+    <link rel="stylesheet" href="styless.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="todo-content">
+        <h2 style="text-align:center">TO DO LIST</h2>
+        <div class="todo-input">
+            <input type="text" Placeholder="Masukkan">
+            <button class="add-todo">tambah</button>
+        </div>
+        <div class="error"></div>
+        <div class="todo-list">
+
+        </div>
+    </div>
+
+    <style>
+        #darkmode {
+            background: #2E2E2E;
+            color: white;
+        }
+    </style>
+
+    <script>
+        if (localStorage.getItem('theme') == 'dark')
+            setDarkMode(true)
+
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.body.setAttribute('id', 'darkmode')
+                localStorage.setItem('theme', 'dark')
+
+
+            } else {
+                document.body.setAttribute('id', '')
+                localStorage.removeItem('theme')
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
